@@ -1,1 +1,1 @@
-from .vietnam import CreateVietnamView
+from .vietnam import VietnamSerializer
