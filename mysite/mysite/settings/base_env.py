@@ -27,8 +27,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['*']
 
-APPEND_SLASH = False
-# False 를 붙여주는게 혹시 모를 실수에도 좋아보이지만, 난 항상 슬래시를 붙여준다. (습관)
+APPEND_SLASH = True
+# True이고 초기 URL이 슬래시로 끝나지 않고 URLconf에서 발견되지 않으면, 마지막에 슬래시를 추가하여 새로운 URL을 형성한다.
+# 기본 값이 True
 
 secret_file = os.path.join(BASE_DIR, '../secrets.json')
 
