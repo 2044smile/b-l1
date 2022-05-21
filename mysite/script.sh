@@ -1,5 +1,7 @@
 #!/bin/bash
 
+export DJANGO_SETTINGS_MODULE="mysite.settings.base_env"
+
 echo "migrate"
 python manage.py migrate
 
