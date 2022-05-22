@@ -9,6 +9,7 @@ https://docs.djangoproject.com/en/3.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/3.2/ref/settings/
 """
+import sys
 from pathlib import Path
 import os, json
 from django.core.exceptions import ImproperlyConfigured
@@ -24,6 +25,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
+
+sys.path.append("/Users/class/intellisys-test/b-l1/mysite")
 
 ALLOWED_HOSTS = ['*']
 
@@ -69,6 +72,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    'mysite.custom_exception_handler.ExceptionMiddleware',
 ]
 
 ROOT_URLCONF = 'mysite.urls'
@@ -149,5 +154,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny',
-    ]
+    ],
+    'EXCEPTION_HANDLER': 'mysite.custom_exception_handler.handle_exception',
 }
