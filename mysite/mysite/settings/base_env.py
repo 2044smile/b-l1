@@ -157,3 +157,29 @@ REST_FRAMEWORK = {
     ],
     'EXCEPTION_HANDLER': 'mysite.custom_exception_handler.handle_exception',
 }
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'format1': {'format': '[%(asctime)s] %(levelname)s %(message)s','datefmt': "%Y-%m-%d %H:%M:%S"},
+        'format2': {'format': '%(levelname)s %(message)s [%(name)s:%(lineno)s]'},
+    },
+    'handlers': {
+        'file': {
+            'level': 'INFO',
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': os.path.join(BASE_DIR, 'logs/django.log'),
+            'encoding': 'UTF-8',
+            },
+        'console': {'level': 'INFO','class': 'logging.StreamHandler','formatter': 'format2',
+        },
+    },
+    'loggers': {
+        'django.server': {
+            'handlers': ['file'],
+            'level': 'WARNING',
+            'propagate': False,
+        },
+    },
+}

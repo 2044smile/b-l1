@@ -5,6 +5,7 @@ from rest_framework.views import APIView
 from ..models import Vietnam
 from ..serializers import VietnamSerializer
 from mysite.exceptions import Error400, Error404, Error500
+import logging as log
 
 
 class Test400APIView(APIView):
