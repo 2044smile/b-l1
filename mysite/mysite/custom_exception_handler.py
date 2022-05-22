@@ -59,7 +59,8 @@ class ExceptionMiddleware(object):
 
         response = self.get_response(request)
 
-        # 요놈이 문제였다.
+        # TODO: TMI
+        # 요놈으로 인해 웹 사이트, Postman 의 response 결과가 다르게 나왔다.
         # if response.status_code == 500:
         #     response = get_response(
         #         message="Internal server error, Why is there only Http404 in the rest_framework?",
