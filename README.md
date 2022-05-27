@@ -8,3 +8,5 @@ Django 튜토리얼 페이지 띄우기
 - mid - b-m2 - Django Setting 변경, Django 내에서 사용되는 settings 값 조정(DEBUG, APPEND_SLASH 등) (done) <br/>
 - high - b-h1 - Django model 을 활용한 DB 연결, Django model 을 활용하여 DB 연결 및 데이터 전송, DB는 로컬 DB 생성하여 사용 (done) <br/>
 - high - b-h2 - Error Log 용 middleware 구성, 400, 500대 에러 리턴을 잡기위한 Middleware 구성 (done) <br/>
+
+# 추가 과제 발생
