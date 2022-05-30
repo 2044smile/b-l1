@@ -35,10 +35,8 @@ def create_vietnam(request):
         serializer = VietnamSerializer(v, many=True)
         return Response(serializer.data)
 
-    if serializer.is_valid():
-        serializer.save()
-    else:
-        print('invalid - 10일이라 시간이 없다, 시간이 더 많았다면 Exception을 만들었을 것')
+    serializer.is_valid(raise_exception=True)
+    serializer.save()
 
     return Response(serializer.data, status=status.HTTP_201_CREATED)
 
