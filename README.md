@@ -11,6 +11,6 @@ Django 튜토리얼 페이지 띄우기
 
 # 추가 과제 발생
 
-1. serializer constraint 조건 넣고 잘 동작하는지 확인
+1. serializer constraint 조건 넣고 잘 동작하는지 확인 (done)
 2. 추후 추가 확인사항 전달 예정
 3. Api에서 exception을 raise하는게 아니라 특정 에러코드(ex. 400/404/500) 발생 시 middleware에서 에러로깅
