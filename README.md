@@ -13,3 +13,11 @@
 1. serializer constraint 조건 넣고 잘 동작하는지 확인 (done)
 2. 추후 추가 확인사항 전달 예정
 3. Api에서 exception을 raise하는게 아니라 특정 에러코드(ex. 400/404/500) 발생 시 middleware에서 에러로깅
+
+# 일지(2022-06-02)
+
+1. Django Serializer 
+2. Model(managed=False) 
+3. View(Call Serializer)
+4. request.META.get()를 이용하여 TOKEN 을 처리할 수 있음
+5. trim_whitespace=True, Default True 기본적으로 True를 가지고 있음
