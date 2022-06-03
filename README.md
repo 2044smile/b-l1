@@ -26,3 +26,4 @@
 
 1. network token header
 2. permissions.BasePermission
+3. Serializer - allow_blank=True  # ''이 들어와도 된다면 True
