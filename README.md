@@ -43,7 +43,7 @@
     * UpdataModelMixin
     * DestroyModelMixin
     * queryset 과 serializer_class 를 지정해 주고 상속받은 Mixins 와 연결만 해주면 됩니다.
-  * Generic APIView
+  * **Generic APIView** &#x1F34E;
     * generics.CreateAPIView : 생성
     * generics.ListAPIView : 목록
     * generics.RetrieveAPIView : 조회
@@ -55,7 +55,7 @@
     * generics.RetrieveUpdateDestroyAPIView : 조회 / 수정 / 삭제
     * 위에서 언급한 Mixins와 APIView 함수형 보다는 Generic APIView가 좋은 것 같다.
     * Generic APIView vs ViewSet 이지 않을까 싶다.
-  * ViewSet
+  * **ViewSet** &#x1F34E;
     * 하나의 단일클래스에 제공합니다.
     * 하나의 헬퍼클래스로 두 개 이상의 URL 처리가 가능한 것입니다.
     * ReadOnlyModelViewSet - list / detail
@@ -63,4 +63,3 @@
     * Generic APIView와의 차이점은 queryset 과 serializer_class 를 지정해주고, url을 매핑하면 됩니다. url 을 매핑하는 방법은 두 가지가 있다.
       * 보통 'Router 를 통해 일괄적으로 등록'을 사용한다. 
 ![image](https://user-images.githubusercontent.com/47213853/172044072-25f41057-963f-43d5-bdb8-4e7a72537622.png)
-
