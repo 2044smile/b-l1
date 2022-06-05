@@ -32,7 +32,7 @@
 
 1. allow_blank / 특이 케이스가 발생하였음, 아무런 데이터가 없어도 '' 로 들어오는 문제 때문에 True로 설정
 2. token / request.META.get('') 은 postman or swagger 기능을 이용하여 삽입할 수 있다. EX) headers
-3. DRF의 경우 Serializer를 Request와 Response를 할 때 검증해야 되는 것으로 확인
-3-1. Django Rest Framework 따라서 RESTful 기능을 HTTP Method와 함께 사용해 웹, 데스크탑 앱, 스마트폰 어플들까지 하나의 API 서버를 생성할 수 있다.
-3-2. DB data -> JSON 
-3-3. API View, Mixins, Generic APIView, ViewSet / 간단한 로직은 API View 데코레이터를 이용하여 '함수형 뷰'로 구현하는 것도 좋다.
+* DRF의 경우 Serializer를 Request와 Response를 할 때 검증해야 되는 것으로 확인
+  * Django Rest Framework 따라서 RESTful 기능을 HTTP Method와 함께 사용해 웹, 데스크탑 앱, 스마트폰 어플들까지 하나의 API 서버를 생성
+  * DB data -> JSON 
+  * API View, Mixins, Generic APIView, ViewSet / 간단한 로직은 API View 데코레이터를 이용하여 '함수형 뷰'로 구현하는 것도 좋다.
