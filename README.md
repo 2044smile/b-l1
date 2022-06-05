@@ -32,4 +32,4 @@
 
 1. allow_blank / 특이 케이스가 발생하였음, 아무런 데이터가 없어도 '' 로 들어오는 문제 때문에 True로 설정
 2. token / request.META.get('') 은 postman or swagger 기능을 이용하여 삽입할 수 있다. EX) headers
-3. 
+3. DRF의 경우 Serializer를 Request와 Response를 할 때 검증해야 되는 것으로 확인
