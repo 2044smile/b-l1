@@ -55,4 +55,11 @@
     * generics.RetrieveUpdateDestroyAPIView : 조회 / 수정 / 삭제
     * 위에서 언급한 Mixins와 APIView 함수형 보다는 Generic APIView가 좋은 것 같다.
     * Generic APIView vs ViewSet 이지 않을까 싶다.
-  * 
+  * ViewSet
+    * 하나의 단일클래스에 제공합니다.
+    * 하나의 헬퍼클래스로 두 개 이상의 URL 처리가 가능한 것입니다.
+    * ReadOnlyModelViewSet - list / detail
+    * ModelViewSet - list, create / detail, update, partial_update, delete
+    * Generic APIView와의 차이점은 queryset 과 serializer_class 를 지정해주고, url을 매핑하면 됩니다. url 을 매핑하는 방법은 두 가지가 있다.
+![image](https://user-images.githubusercontent.com/47213853/172044072-25f41057-963f-43d5-bdb8-4e7a72537622.png)
+
