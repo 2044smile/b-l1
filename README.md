@@ -36,10 +36,23 @@
   * Django Rest Framework 따라서 RESTful 기능을 HTTP Method와 함께 사용해 웹, 데스크탑 앱, 스마트폰 어플들까지 하나의 API 서버를 생성
   * API View, Mixins, Generic APIView, ViewSet / 간단한 로직은 API View 데코레이터를 이용하여 '함수형 뷰'로 구현하는 것도 좋다.
   * DB data -> JSON 
-* Mixins
-  * CreateModelMixin
-  * ListModelMixin
-  * RetrieveModelMixin
-  * UpdataModelMixin
-  * DestroyModelMixin
+  * Mixins
+    * CreateModelMixin
+    * ListModelMixin
+    * RetrieveModelMixin
+    * UpdataModelMixin
+    * DestroyModelMixin
     * queryset 과 serializer_class 를 지정해 주고 상속받은 Mixins 와 연결만 해주면 됩니다.
+  * Generic APIView
+    * generics.CreateAPIView : 생성
+    * generics.ListAPIView : 목록
+    * generics.RetrieveAPIView : 조회
+    * generics.DestroyAPIView : 삭제
+    * generics.UpdateAPIView : 수정
+    * generics.RetrieveUpdateAPIView : 조회 / 수정
+    * generics.RetrieveDestroyAPIView : 조회 / 삭제
+    * generics.ListCreateAPIView : 목록 / 생성
+    * generics.RetrieveUpdateDestroyAPIView : 조회 / 수정 / 삭제
+    * 위에서 언급한 Mixins와 APIView 함수형 보다는 Generic APIView가 좋은 것 같다.
+    * Generic APIView vs ViewSet 이지 않을까 싶다.
+  * 
