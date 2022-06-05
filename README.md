@@ -36,4 +36,10 @@
   * Django Rest Framework 따라서 RESTful 기능을 HTTP Method와 함께 사용해 웹, 데스크탑 앱, 스마트폰 어플들까지 하나의 API 서버를 생성
   * API View, Mixins, Generic APIView, ViewSet / 간단한 로직은 API View 데코레이터를 이용하여 '함수형 뷰'로 구현하는 것도 좋다.
   * DB data -> JSON 
-
+* Mixins
+  * CreateModelMixin
+  * ListModelMixin
+  * RetrieveModelMixin
+  * UpdataModelMixin
+  * DestroyModelMixin
+    * queryset 과 serializer_class 를 지정해 주고 상속받은 Mixins 와 연결만 해주면 됩니다.
