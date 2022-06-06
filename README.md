@@ -63,3 +63,8 @@
     * Generic APIView와의 차이점은 queryset 과 serializer_class 를 지정해주고, url을 매핑하면 됩니다. url 을 매핑하는 방법은 두 가지가 있다.
       * 보통 'Router 를 통해 일괄적으로 등록'을 사용한다. 
 ![image](https://user-images.githubusercontent.com/47213853/172044072-25f41057-963f-43d5-bdb8-4e7a72537622.png)
+
+# 일지(2022-06-06)
+
+* Github commit https://underflow101.tistory.com/31
+  * type, body, footer
