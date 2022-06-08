@@ -1,0 +1,15 @@
+name: learn-github-actions
+on: [push]
+jobs:
+  check-bats-version:
+    runs-on: ubuntu-latest
+    # strategy:
+      # matrix:
+        # python-version: [3.7]
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v3
+        with:
+          python-version: '3.x'
+#          python-version: ${{ matrix.python-version }} 파이썬 버전을 strategy(전략) 에서 설정할 수 있다.
+      - run: python manage.py runserver
