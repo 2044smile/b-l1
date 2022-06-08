@@ -68,3 +68,11 @@
 
 * Github commit https://underflow101.tistory.com/31
   * type, body, footer
+
+# 일지(2022-06-08)
+
+* Github actions
+  * https://docs.github.com/en/actions/learn-github-actions/understanding-github-actions 
+  * GitHub Actions는 빌드, 테스트 및 도입 파이프라인을 자동화할 수 있는 지속적인 통합 및 연속 전달(CI/CD) 플랫폼입니다.
+  * **Actions - 직접 액션을 작성하거나 GitHub 마켓플레이스에서 워크플로우에서 사용할 액션을 찾을 수 있습니다.**
+  * YAMI 파일로 정의
