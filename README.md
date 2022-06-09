@@ -80,7 +80,5 @@
 # 일자(2022-06-09)
 
 * Github Actions
-  * Configure AWS(need AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
-  * AWS ECR Login(Docker) and ECR Repo Push(need ECR REPO, LAYER_NAME)
-  * Docker logout
-  * 정리하면 Git Actions로 테스트가 완료 시 AWS ECR을 로그인하여 Docker image build 후 ECR upload
+  * Github CI AWS, Docker, ECR 한마디로 actions로 돌리는 것들까지가 CI
+  * GIthub CD deploy 배포
