@@ -76,3 +76,11 @@
   * GitHub Actions는 빌드, 테스트 및 도입 파이프라인을 자동화할 수 있는 지속적인 통합 및 연속 전달(CI/CD) 플랫폼입니다.
   * **Actions - 직접 액션을 작성하거나 GitHub 마켓플레이스에서 워크플로우에서 사용할 액션을 찾을 수 있습니다.**
   * YAMI 파일로 정의
+
+# 일자(2022-06-09)
+
+* Github Actions
+  * Configure AWS(need AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY)
+  * AWS ECR Login(Docker) and ECR Repo Push(need ECR REPO, LAYER_NAME)
+  * Docker logout
+  * 정리하면 Git Actions로 테스트가 완료 시 AWS ECR을 로그인하여 Docker image build 후 ECR upload
