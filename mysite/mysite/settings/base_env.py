@@ -34,7 +34,7 @@ APPEND_SLASH = True
 # True이고 초기 URL이 슬래시로 끝나지 않고 URLconf에서 발견되지 않으면, 마지막에 슬래시를 추가하여 새로운 URL을 형성한다.
 # 기본 값이 True
 
-secret_file = os.path.join(BASE_DIR, '../secrets.json')
+secret_file = os.path.join(BASE_DIR, 'mysite/secrets.json')
 
 with open(secret_file) as f:
     secrets = json.loads(f.read())
