@@ -81,4 +81,4 @@
 
 * Github Actions
   * Github CI AWS, Docker, ECR 한마디로 actions로 돌리는 것들까지가 CI
-  * GIthub CD deploy 배포
+  * GIthub CD deploy(helm install or helm upgrade) 배포
