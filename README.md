@@ -88,3 +88,5 @@
 * https://dingrr.com/blog/post/drf%EB%8A%94-%EC%9D%B4%EC%A0%9C-%EC%9E%8A%EC%9C%BC%EC%84%B8%EC%9A%94-django-ninja-%EC%9D%98-%ED%83%84%EC%83%9D
 * INTERESTING, Django DRF Serializer가 느리다. Django Ninga를 개인 프로젝트에서 구현 시도!
   * 기본적으로 스웨거를 지원한다.
+* io.BytedIO() 객체를 넘겨주면 객체 내에 저장된 bytes 정보를 불러와 이미지로 읽어주는 흐름인 것 같다.
+* io.BytesIO() 이름에서 짐작할 수 있듯이 **바이트 배열을 이진 파일로 다룰 수 있게 해주는 클래스**입니다.
