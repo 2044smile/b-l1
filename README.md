@@ -86,4 +86,5 @@
 # 일자(2022-06-10)
 
 * https://dingrr.com/blog/post/drf%EB%8A%94-%EC%9D%B4%EC%A0%9C-%EC%9E%8A%EC%9C%BC%EC%84%B8%EC%9A%94-django-ninja-%EC%9D%98-%ED%83%84%EC%83%9D
-* INTERESTING, Django DRF Serializer가 느리다.
+* INTERESTING, Django DRF Serializer가 느리다. Django Ninga를 개인 프로젝트에서 구현 시도!
+  * 기본적으로 스웨거를 지원한다.
