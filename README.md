@@ -82,3 +82,8 @@
 * Github Actions
   * Github CI AWS, Docker, ECR 한마디로 actions로 돌리는 것들까지가 CI
   * GIthub CD deploy(helm install or helm upgrade) 배포
+
+# 일자(2022-06-10)
+
+* https://dingrr.com/blog/post/drf%EB%8A%94-%EC%9D%B4%EC%A0%9C-%EC%9E%8A%EC%9C%BC%EC%84%B8%EC%9A%94-django-ninja-%EC%9D%98-%ED%83%84%EC%83%9D
+* INTERESTING, Django DRF Serializer가 느리다.
